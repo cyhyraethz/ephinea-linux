@@ -8,11 +8,11 @@
 
 - update launcher options for fullscreen resolution
 
-### Controller Config
+### Xbox One Wireless Controller
 
 - add the `SDL_JOYSTICK_HIDAPI=0` environmental variable (see image)
 
-- install antimicrox (available in AUR)
+- install `antimicrox` and `xpadneo-dkms-git` (available in AUR)
 
 - copy the `antimicrox/pso.gamecontroller.amgp` file to  
   `$HOME/.local/share/antimicrox/pso.gamecontroller.amgp`
@@ -25,6 +25,14 @@
 - add pre-launch script to game configuration in Lutris
 
 - configure controller buttons using in-game settings
+
+### Connecting Controller
+
+- install `expect` (available in official repos)
+
+- run the `bluetooth.sh` script, passing it the  
+  bluetooth address as its only argument, e.g.  
+  `./scripts/bluetooth.sh 00:11:22:33:FF:EE`
 
 ## Troubleshooting
 
