@@ -1,12 +1,28 @@
+## Phantasy Star Online: Blue Burst
+
+Tutorial for playing Phantasy Star Online: Blue Burst on Linux
+
+![Phantasy Star Online: Blue Burst](images/phantasy-star-online-blue-burst.png)
+
 ## Instructions
 
 ### Initial Setup
 
-- install using [Lutris](https://lutris.net/games/phantasy-star-online-blue-burst/)
+- install using the `EphineaPSO version` of the
+  [Lutris](https://lutris.net/games/phantasy-star-online-blue-burst/)
+  install script
 
-- change wine version to prevent black screen on character creation
+![Lutris Install Script](images/lutris-install-script.png)
 
-- update launcher options for fullscreen resolution
+- change wine version to `System (7.0 (Staging))`
+  to prevent black screen on character creation
+
+![Lutris Runner Options](images/lutris-runner-options.png)
+
+- enable fullscreen by disabling window mode and setting
+  resolution to the native resolution of your monitor
+
+![Launcher Options](images/launcher-options.png)
 
 ### Xbox One Wireless Controller
 
