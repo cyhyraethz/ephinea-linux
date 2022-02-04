@@ -1,12 +1,12 @@
-## Phantasy Star Online: Blue Burst
+# Phantasy Star Online: Blue Burst
 
-Tutorial for playing Phantasy Star Online: Blue Burst on Linux
+### Tutorial for playing Phantasy Star Online: Blue Burst on Linux
 
-![Phantasy Star Online: Blue Burst](images/phantasy-star-online-blue-burst.png)
+![Phantasy Star Online: Blue Burst](images/phantasy-star-online.png)
 
-## Instructions
+# Instructions
 
-### Initial Setup
+## Initial Setup
 
 - install using the `EphineaPSO version` of the
   [Lutris](https://lutris.net/games/phantasy-star-online-blue-burst/)
@@ -24,42 +24,60 @@ Tutorial for playing Phantasy Star Online: Blue Burst on Linux
 
 ![Launcher Options](images/launcher-options.png)
 
-### Xbox One Wireless Controller
+## Xbox One Wireless Controller
 
-- add the `SDL_JOYSTICK_HIDAPI=0` environmental variable (see image)
+- install [AntiMicroX](https://github.com/AntiMicroX/antimicrox) and
+  [xpadneo](https://github.com/atar-axis/xpadneo) (available as the `antimicrox`  
+  and `xpadneo-dkms-git` packages in the Arch User Repository  
+  for users of Arch-based Linux distributions)
 
-- install `antimicrox` and `xpadneo-dkms-git` (available in AUR)
+![AUR Package Installation](images/aur-package-installation.png)
 
 - copy the `antimicrox/pso.gamecontroller.amgp` file to  
   `$HOME/.local/share/antimicrox/pso.gamecontroller.amgp`
 
-- or configure AntiMicroX manually based on the included image  
+  or configure AntiMicroX manually based on the included image  
   (L Trigger assigned to UP, R Trigger assigned to CONTROL_L)  
   and save the controller profile to  
   `$HOME/.local/share/antimicrox/pso.gamecontroller.amgp`
 
-- add pre-launch script to game configuration in Lutris
+![AntiMicroX Config](images/antimicrox-config.png)
+
+- add the `SDL_JOYSTICK_HIDAPI=0` environmental variable and pre-launch script  
+  to the game configuration under `System options` in Lutris (make sure to tick  
+  the `Show advanced options` checkbox in the bottom left corner)
+
+![Lutris System Options](images/lutris-system-options.png)
 
 - configure controller buttons using in-game settings
 
-### Connecting Controller
+![Pad Button Config](images/pad-button-config.png)
 
-- install `expect` (available in official repos)
+## Connecting Bluetooth Controller
+
+- follow
+  [these instructions](https://github.com/atar-axis/xpadneo#connection)
+  for connecting  
+  manually using the command line
+
+  OR
+
+- install `expect` (available in the Arch Linux official repositories)
 
 - run the `bluetooth.sh` script, passing it the  
   bluetooth address as its only argument, e.g.  
   `./scripts/bluetooth.sh 00:11:22:33:FF:EE`
 
-## Troubleshooting
+# Troubleshooting
 
-### Keyboard Not Working
+## Controls Not Working
 
-If keyboard is not responding after lanching the game,  
+If controls do not work properly after lanching the game,  
 try clicking the mouse anywhere in the game window
 
-## Lutris
+# Lutris
 
-### Banner
+## Banner
 
 ![Banner](banner/phantasy-star-online-blue-burst.jpg)
 
